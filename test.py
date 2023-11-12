@@ -103,7 +103,7 @@ def test_all_case(net, image_list, num_classes=2, patch_size=(112, 112, 80), str
 
 
 if __name__ == '__main__':
-    data_path = '/data/Yb/data/LASet/data/'
+    data_path = 'data_path'
     test_save_path = 'predictions/'
     save_mode_path = 'checkpoints/ddl_best.pth'
     net = VNet_bf(n_channels=1,n_classes=2, normalization='batchnorm').cuda()

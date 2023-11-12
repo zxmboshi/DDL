@@ -157,19 +157,19 @@ def main(args):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--dataset_name', type=str, default='Ink Detection', help='dataset_name')
+    parser.add_argument('--dataset_name', type=str, default='', help='2018 Atria Segmentation Challenge')
     parser.add_argument('--deterministic', type=int, default=1, help='whether use deterministic training')
     parser.add_argument('--gpu', type=str, default='0', help='GPU to use')
     parser.add_argument('--seed', type=int, default=21)
     parser.add_argument('--labelnum', type=int,  default=25, help='labeled samples')
-    parser.add_argument('--data_path', type=str, default='/data/Yb/data/LASet')
+    parser.add_argument('--data_path', type=str, default='data_path')
     parser.add_argument('--in_ch', type=int, default=1)
     parser.add_argument('--num_classes', type=int, default=2)
     parser.add_argument('--batch_size', type=int, default=4)
-    parser.add_argument('--epochs', type=int, default=300)
+    parser.add_argument('--epochs', type=int, default=200)
     parser.add_argument('--lr', type=float, default=0.01)
     parser.add_argument('--patch_size', type=float, default=(112, 112, 80))
-    parser.add_argument('--save_path', type=str, default='results/label24_sup')
+    parser.add_argument('--save_path', type=str, default='results/label25_sup')
 
     args = parser.parse_args()
 
